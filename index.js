@@ -66,16 +66,16 @@ function calcPoint(card1, card2, card3) {
 }
 
 function createCardElement(initCard) {
-  const cardTemplate = document.getElementById("cardTemplate");
-  if (!cardTemplate) return;
+  // const cardTemplate = document.getElementById("cardTemplate");
+  // if (!cardTemplate) return;
 
-  const cardElement = cardTemplate.content.firstElementChild.cloneNode(true);
-  if (!cardElement) return;
+  // const cardElement = cardTemplate.content.firstElementChild.cloneNode(true);
+  // if (!cardElement) return;
 
-  const cardRandom = document.getElementById("cardRandom");
-  if (!cardRandom) return;
-  cardRandom.textContent = "";
-  cardRandom.appendChild(cardElement);
+  // const cardRandom = document.getElementById("cardRandom");
+  // if (!cardRandom) return;
+  // cardRandom.textContent = "";
+  // cardRandom.appendChild(cardElement);
 
   const card1 = document.getElementById("card1");
   const card2 = document.getElementById("card2");
