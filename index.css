@@ -1,0 +1,25 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 90vw;
+  margin: 0 auto;
+  background-color: darkslategray;
+}
+
+.game {
+  width: 50%;
+  margin: 150px auto;
+}
+
+.board {
+  background-color: #145a32;
+}
+
+.card-point {
+  width: 30%;
+  text-align: center;
+}
