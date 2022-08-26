@@ -74,7 +74,7 @@ function createCardElement(initCard) {
 
   const cardRandom = document.getElementById("cardRandom");
   if (!cardRandom) return;
-  // cardRandom.textContent = "";
+  cardRandom.textContent = "";
   cardRandom.appendChild(cardElement);
 
   const card1 = document.getElementById("card1");
