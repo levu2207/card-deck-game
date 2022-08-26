@@ -11,7 +11,6 @@ body {
 }
 
 .game {
-  width: 50%;
   margin: 150px auto;
 }
 
@@ -20,6 +19,6 @@ body {
 }
 
 .card-point {
-  width: 30%;
+  width: 185px;
   text-align: center;
 }
