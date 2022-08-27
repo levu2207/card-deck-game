@@ -3,19 +3,19 @@ const cardType = ["hearts", "diamonds", "clubs", "spades"];
 
 let initCard = [
   {
-    number: "king",
+    number: "og",
     type: "hearts",
   },
   {
-    number: "king",
+    number: "og",
     type: "diamonds",
   },
   {
-    number: "king",
+    number: "og",
     type: "clubs",
   },
   {
-    point: "Ba Cào",
+    point: "",
   },
 ];
 
@@ -65,18 +65,7 @@ function calcPoint(card1, card2, card3) {
   return point;
 }
 
-function createCardElement(initCard) {
-  // const cardTemplate = document.getElementById("cardTemplate");
-  // if (!cardTemplate) return;
-
-  // const cardElement = cardTemplate.content.firstElementChild.cloneNode(true);
-  // if (!cardElement) return;
-
-  // const cardRandom = document.getElementById("cardRandom");
-  // if (!cardRandom) return;
-  // cardRandom.textContent = "";
-  // cardRandom.appendChild(cardElement);
-
+function displayCard(initCard) {
   const card1 = document.getElementById("card1");
   const card2 = document.getElementById("card2");
   const card3 = document.getElementById("card3");
@@ -105,7 +94,7 @@ function renderCard(initCard) {
     randomCard();
   }
 
-  createCardElement(initCard);
+  displayCard(initCard);
 }
 
 function handlePlayButton() {
@@ -114,12 +103,12 @@ function handlePlayButton() {
 }
 
 function main() {
+  renderCard(initCard);
+
   const playGame = document.getElementById("play");
   playGame.addEventListener("click", () => {
     handlePlayButton();
   });
-
-  renderCard(initCard);
 }
 
 main();
